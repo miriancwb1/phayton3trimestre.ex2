@@ -1,10 +1,5 @@
-# Solicita ao usuário para inserir uma nota
-nota = float(input("Digite a nota (0 a 10): "))
+minutos = int(input("Digite a quantidade de minutos: "))
+horas = minutos // 60
+minutos_restantes = minutos % 60
+print(f"{minutos} minutos são {horas} horas e {minutos_restantes} minutos.")
 
-# Verifica a classificação da nota
-if nota >= 7:
-    print("Aluno aprovado.")
-elif 5 <= nota < 7:
-    print("Aluno em recuperação.")
-else:
-    print("Aluno reprovado.")

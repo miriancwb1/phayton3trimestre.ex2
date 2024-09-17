@@ -1,10 +1,9 @@
-### 10. Verifique se um número é divisível por 3 e 5
-python
-# Solicita ao usuário para inserir um número
-num = int(input("Digite um número: "))
+num = int(input("Digite um número inteiro não negativo: "))
+fatorial = 1
 
-# Verifica se o número é divisível por 3 e 5
-if num % 3 == 0 and num % 5 == 0:
-    print(f"O número {num} é divisível por 3 e 5.")
+if num < 0:
+    print("Fatorial não definido para números negativos.")
 else:
-    print(f"O número {num} não é divisível por 3 e 5.")
+    for i in range(1, num + 1):
+        fatorial *= i
+    print(f"O fatorial de {num} é:", fatorial)

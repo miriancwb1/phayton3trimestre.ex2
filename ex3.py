@@ -1,8 +1,5 @@
-# Solicita ao usuário para informar a idade
-idade = int(input("Digite sua idade: "))
-
-# Verifica se a pessoa é maior ou menor de idade
-if idade >= 18:
-    print("Você é maior de idade.")
-else:
-    print("Você é menor de idade.")
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+num3 = float(input("Digite o terceiro número: "))
+media = (num1 + num2 + num3) / 3
+print("A média é:", media)

@@ -1,12 +1,7 @@
-# Define a senha pré-definida
-senha_correta = "senha123"
-
-# Solicita ao usuário para inserir a senha
-senha_usuario = input("Digite a sua senha: ")
-
-# Verifica se a senha inserida é igual à senha pré-definida
-if senha_usuario == senha_correta:
-    print("A senha está correta.")
+num = float(input("Digite um número: "))
+if num > 0:
+    print("O número é positivo.")
+elif num < 0:
+    print("O número é negativo.")
 else:
-    print("A senha está incorreta.")
-
+    print("O número é zero.")
