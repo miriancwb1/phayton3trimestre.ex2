@@ -1,5 +1,7 @@
-minutos = int(input("Digite a quantidade de minutos: "))
-horas = minutos // 60
-minutos_restantes = minutos % 60
-print(f"{minutos} minutos são {horas} horas e {minutos_restantes} minutos.")
-
+num = float(input("Digite um número: "))
+if num > 0:
+    print("O número é positivo.")
+elif num < 0:
+    print("O número é negativo.")
+else:
+    print("O número é zero.")

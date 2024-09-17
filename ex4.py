@@ -1,5 +1,8 @@
-idade = int(input("Digite sua idade: "))
-if idade >= 18:
-    print("Você é maior de idade.")
+# Solicita ao usuário para informar um ano
+ano = int(input("Digite um ano: "))
+
+# Verifica se o ano é bissexto
+if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+    print(f"O ano {ano} é bissexto.")
 else:
-    print("Você é menor de idade.")
+    print(f"O ano {ano} não é bissexto.")
